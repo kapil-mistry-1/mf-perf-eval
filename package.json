@@ -1,0 +1,16 @@
+{
+  "name": "mf-perf-eval",
+  "version": "1.0.0",
+  "description": "this is an app to understand the mutual fund performance",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://kapil_mistry_1@bitbucket.org/kapil_mistry_1/mf-perf-eval.git"
+  },
+  "author": "devwarriors",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/kapil_mistry_1/mf-perf-eval#readme"
+}

@@ -1,0 +1,21 @@
+
+
+<form class="example-form">
+    <div style="background-color: darkblue;">
+        <h1>Search for funds here</h1>
+    <input type="text"
+           placeholder="Search for a funds"
+           [formControl]="control"
+           [matAutocomplete]="auto"/>
+           </div>
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let fund of filteredfunds | async" [value]="fund">
+        {{fund}}
+      </mat-option>
+    </mat-autocomplete>
+  </form>
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+  </mat-dialog-actions>
+
+  

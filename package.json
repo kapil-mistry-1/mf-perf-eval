@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://kapil_mistry_1@bitbucket.org/kapil_mistry_1/mf-perf-eval.git"
   },
@@ -52,7 +52,7 @@
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"
   },
-   "author": "devwarriors",
+  "author": "devwarriors",
   "license": "ISC",
   "homepage": "https://bitbucket.org/kapil_mistry_1/mf-perf-eval#readme"
 }

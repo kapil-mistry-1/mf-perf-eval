@@ -4,11 +4,16 @@
   "description": "this is an app to understand the mutual fund performance",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --output-path mf-perf-eval --aot --prod"
+  },
+  "engines": {
+    "node": "v8.11.4",
+    "npm": "5.8.0"
   },
   "repository": {
     "type": "git",
@@ -18,8 +23,10 @@
   "dependencies": {
     "@angular/animations": "~9.1.0",
     "@angular/cdk": "^9.2.0",
+    "@angular/cli": "^9.1.0",
     "@angular/common": "~9.1.0",
     "@angular/compiler": "~9.1.0",
+    "@angular/compiler-cli": "^9.1.0",
     "@angular/core": "~9.1.0",
     "@angular/flex-layout": "^9.0.0-beta.29",
     "@angular/forms": "~9.1.0",
@@ -27,18 +34,21 @@
     "@angular/platform-browser": "~9.1.0",
     "@angular/platform-browser-dynamic": "~9.1.0",
     "@angular/router": "~9.1.0",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
+    "typescript": "~3.8.3",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.901.0",
-    "@angular/cli": "~9.1.0",
-    "@angular/compiler-cli": "~9.1.0",
+    "@angular/cli": "^9.1.0",
+    "@angular/compiler-cli": "^9.1.0",
     "@angular/language-service": "~9.1.0",
-    "@types/node": "^12.11.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
     "codelyzer": "^5.1.2",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",

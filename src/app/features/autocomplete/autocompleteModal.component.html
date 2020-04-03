@@ -1,8 +1,26 @@
-
-
+<div>
+    <h1 style="text-align: center;">Search for funds here</h1>
+</div>
+<br />
 <form class="example-form">
-    <div style="background-color: darkblue;">
-        <h1>Search for funds here</h1>
+  <mat-form-field class="example-full-width">
+    <input type="text"
+           placeholder="Search Mutual funds"
+           aria-label="Number"
+           matInput
+           [formControl]="myControl"
+           [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+        {{option}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>
+
+<!-- <form class="example-form">
+    <div style="">
+        <h1 style="text-align: center;">Search for funds here</h1>
     <input type="text"
            placeholder="Search for a funds"
            [formControl]="control"
@@ -13,9 +31,9 @@
         {{fund}}
       </mat-option>
     </mat-autocomplete>
-  </form>
+  </form> -->
   <mat-dialog-actions align="end">
-    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button mat-flat-button color="primary" class="nordea-button" mat-dialog-close>Cancel</button>
   </mat-dialog-actions>
 
   

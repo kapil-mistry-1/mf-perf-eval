@@ -16,10 +16,9 @@ const featureroutes: Routes = [
   },
   {
     'path': 'Comparefunds',
-    component: ComparefundsComponent
+     component: ComparefundsComponent
    
-  },
- 
+  }
 ];
 
 @NgModule({

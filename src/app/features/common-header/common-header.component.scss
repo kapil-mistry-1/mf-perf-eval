@@ -15,11 +15,24 @@
     margin:20px;
     margin-left:70px;
 }
+
 .example-form {
     min-width: 150px;
     max-width: 500px;
     width: 100%;
   }
-  .example-full-width {
+  
+.example-full-width {
     width: 100%;
-  }
+}
+.nordea-grow {
+    letter-spacing: 3px;
+    color: darkblue;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.nordea-button {
+    background-color: darkblue;
+    color: white; 
+}

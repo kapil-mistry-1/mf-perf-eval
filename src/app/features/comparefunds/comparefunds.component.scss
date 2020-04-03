@@ -1,7 +1,46 @@
+
+
+mat-grid-tile {
+    border: 1px solid #CECECE;
+}
+
+.compare-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 0 0 10px 1px rgba(0,0,0,.1);
+    box-shadow: 0 0 10px 1px rgba(0,0,0,.1);
+    height: 130px;
+}
+
 .box {
     float: left;
-    width: 33%;
+    width: 25%;
+    box-sizing: border-box;
     background-color: white;
     text-align: center;
-    color: #fff;
+    border: 1px solid #CECECE;
+    height: 130px;
+    padding: 20px;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+  
+    p {
+        margin: 0;
+        font-size: 0.8125rem;
+    }
+}
+
+.grid-list-shadow {
+    -webkit-box-shadow: 0 0 10px 1px rgba(0,0,0,.1);
+    box-shadow: 0 0 10px 1px rgba(0,0,0,.1);
 }

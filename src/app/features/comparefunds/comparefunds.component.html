@@ -1,5 +1,4 @@
-<app-common-header></app-common-header>
-<p>comparefunds works!</p>
+<!-- <p>comparefunds works!</p>
 <div style="display:flex;justify-content:space-between;">
 <div>
     <div>
@@ -19,4 +18,54 @@
 </div>
 <div>Add a fund</div>
 </div>
+</div> -->
+<div fxFlex fxLayout="column wrap">
+    <div fxFlex>
+        <app-common-header></app-common-header>
+    </div>
+
+    <div fxFlex fxLayout="row" style="margin:50px">
+        <div fxFlex="33" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" fxLayout="column" style="padding: 5px;">
+            <mat-card class="card mat-elevation-z0">
+                <mat-card-content class="custom-mat-card-content">
+                    <div>
+                        <mat-icon aria-hidden="false" aria-label="Select Fund 3" (click)="openModal()">add_box
+                        </mat-icon>
+                    </div>
+                    <div>Add a fund</div>
+                </mat-card-content>
+                <mat-card-footer>
+
+                </mat-card-footer>
+            </mat-card>
+        </div>
+        <div fxFlex="33" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" fxLayout="column" style="padding: 5px;">
+            <mat-card class="card mat-elevation-z0">
+                <mat-card-content class="custom-mat-card-content">
+                    <div>
+                        <mat-icon aria-hidden="false" aria-label="Select Fund 3" (click)="openModal()">add_box
+                        </mat-icon>
+                    </div>
+                    <div>Add a fund</div>
+                </mat-card-content>
+                <mat-card-footer>
+
+                </mat-card-footer>
+            </mat-card>
+        </div>
+        <div fxFlex="33" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" fxLayout="column" style="padding: 5px;">
+            <mat-card class="card mat-elevation-z0">
+                <mat-card-content class="custom-mat-card-content">
+                    <div>
+                        <mat-icon aria-hidden="false" aria-label="Select Fund 3" (click)="openModal()">add_box
+                        </mat-icon>
+                    </div>
+                    <div>Add a fund</div>
+                </mat-card-content>
+                <mat-card-footer>
+
+                </mat-card-footer>
+            </mat-card>
+        </div>
+    </div>
 </div>
